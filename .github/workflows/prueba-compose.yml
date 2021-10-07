@@ -9,5 +9,5 @@ jobs:
         run: docker-compose -f docker-compose.yml up
       - name: 'Listar los contenedores en ejecución'
         run: docker ps -a
-      - name 'Mostrar la bitácora de inicio'
+      - name: 'Mostrar la bitácora de inicio'
         run: docker logs basedatos
