@@ -1,4 +1,4 @@
-name: 'ejecutar Docker'
+oname: 'ejecutar Docker'
 on: push
 jobs:
   saludar:
@@ -7,8 +7,8 @@ jobs:
     steps:
       - name: 'ejecutar la acción del Docker'
         id: hola
-        uses: actions/accion@v1
-        whith:
+        uses: EjemploDocker/accion@v1
+        with:
           quien: 'Lucho'
       - name: 'Mostrar la hora obtenida'
         run: echo "La hora obtenida fue ${{ steps.hola.outputs.hora }}"
