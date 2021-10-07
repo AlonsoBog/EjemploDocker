@@ -1,0 +1,14 @@
+name: 'ejecutar Docker'
+on: push
+jobs:
+  saludar:
+    runs-on: ubuntu-latest
+    name: 'Tarea para saludarme'
+    steps:
+      - name: 'ejecutar la acción del Docker'
+        id: hola
+        uses: actions/accion@v1
+        whith:
+          quien: 'Lucho'
+      - name: 'Mostrar la hora obtenida'
+        run: echo "La hora obtenida fue ${{ steps.hola.outputs.hora }}"
