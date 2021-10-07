@@ -1,4 +1,4 @@
-oname: 'ejecutar Docker'
+name: 'ejecutar Docker'
 on: push
 jobs:
   saludar:
