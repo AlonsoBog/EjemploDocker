@@ -1,6 +1,6 @@
 version: "3"
 services:
-  baedatos:
+  basedatos:
   image: postgres
   restart: always
   environment:
